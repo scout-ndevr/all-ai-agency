@@ -3,189 +3,230 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ALL AI Agency — Architect-Level Led Artificial Intelligence</title>
-<meta name="description" content="ALL AI Agency: Architect-Level Led Artificial Intelligence. Senior software architects directing AI to deliver production-ready work in days, not months. A Ndevr venture.">
+<title>ALL AI Agency — Architect-Level Led Artificial Intelligence | Ship Production-Ready Software in Days</title>
+<meta name="description" content="ALL AI Agency puts senior software architects at the helm, directing AI to deliver production-ready web apps, MVPs, and AI-native products in days — not months. A Ndevr venture.">
+<meta name="keywords" content="AI development agency, architect-led AI, software development, MVP development, AI-native products, web applications, production-ready code, rapid development">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://all-ai-agency.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://all-ai-agency.com/">
+<meta property="og:title" content="ALL AI Agency — Architect-Level Led Artificial Intelligence">
+<meta property="og:description" content="Senior software architects directing AI to deliver production-ready work in days, not months. Ship MVPs, web apps, and AI-native products with confidence.">
+<meta property="og:image" content="https://all-ai-agency.com/og-image.jpg">
+<meta property="og:site_name" content="ALL AI Agency">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@allaiagency">
+<meta name="twitter:title" content="ALL AI Agency — Architect-Level Led Artificial Intelligence">
+<meta name="twitter:description" content="Senior software architects directing AI to deliver production-ready work in days, not months.">
+<meta name="twitter:image" content="https://all-ai-agency.com/og-image.jpg">
+
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ALL AI Agency",
+  "alternateName": "Architect-Level Led Artificial Intelligence",
+  "url": "https://all-ai-agency.com",
+  "description": "Senior software architects directing AI to deliver production-ready web apps, MVPs, and AI-native products in days, not months.",
+  "email": "info@all-ai-agency.com",
+  "telephone": "+17192863387",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1580 N. Logan St. Ste 660",
+    "addressLocality": "Denver",
+    "addressRegion": "CO",
+    "postalCode": "80203",
+    "addressCountry": "US"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Ndevr",
+    "url": "https://ndevr.io"
+  },
+  "knowsAbout": ["Software Architecture", "Artificial Intelligence", "Web Development", "MVP Development", "AI-Native Products"],
+  "serviceType": ["Software Development", "AI Development", "Web Application Development", "Technical Strategy"],
+  "areaServed": "US",
+  "sameAs": [
+    "https://x.com/allaiagency",
+    "https://instagram.com/allaiagency"
+  ]
+}
+</script>
+
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--red:#FE1132;--dark:#1A1A1A;--dark2:#2D2D2D;--light:#F7F7F8;--white:#FFFFFF;--red-dark:#D80E2A;--grey:#888}
+:root{--red:#FE1132;--dark:#0F0F0F;--text:#1A1A1A;--muted:#71717A;--light:#FAFAFA;--white:#FFFFFF;--border:#E4E4E7;--red-dark:#D80E2A}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;color:var(--dark);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 
 /* Animations */
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}
-.reveal{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.4,0,.2,1)}
-.reveal.visible{opacity:1;transform:translateY(0)}
-.reveal.delay-1{transition-delay:.1s}
-.reveal.delay-2{transition-delay:.2s}
-.reveal.delay-3{transition-delay:.3s}
+@keyframes lineGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.reveal{opacity:0;transform:translateY(40px);transition:all .8s cubic-bezier(.23,1,.32,1)}
+.reveal.visible{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}.reveal.d4{transition-delay:.4s}
 
-/* Navigation */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 2rem;transition:all .35s ease;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
-nav.scrolled{background:rgba(26,26,26,.95);box-shadow:0 1px 30px rgba(0,0,0,.15)}
+/* Nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 3rem;transition:all .4s ease}
+nav.scrolled{background:rgba(255,255,255,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 nav .inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:900;font-size:1.35rem;letter-spacing:-.02em;color:var(--white);text-decoration:none}
-.logo span{color:var(--red)}
-nav a.cta-nav{font-size:.85rem;font-weight:600;color:var(--white);text-decoration:none;border:1.5px solid rgba(255,255,255,.25);padding:.55rem 1.5rem;border-radius:100px;transition:all .25s ease}
-nav a.cta-nav:hover{background:var(--red);border-color:var(--red);color:var(--white)}
+.logo{font-family:'Instrument Serif',serif;font-size:1.6rem;color:var(--text);text-decoration:none;letter-spacing:-.02em}
+.logo b{color:var(--red)}
+nav .cta-nav{font-size:.82rem;font-weight:600;color:var(--text);text-decoration:none;padding:.6rem 1.6rem;border:1.5px solid var(--border);border-radius:100px;transition:all .25s}
+nav .cta-nav:hover{border-color:var(--red);color:var(--red)}
 
-/* Hero */
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 2rem 6rem;background:var(--dark);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-40%;right:-20%;width:70%;height:180%;background:radial-gradient(ellipse,rgba(254,17,50,.1) 0%,transparent 65%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:-30%;left:-15%;width:50%;height:100%;background:radial-gradient(ellipse,rgba(254,17,50,.05) 0%,transparent 65%);pointer-events:none}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-.hero-content{max-width:860px;position:relative;z-index:1}
-.hero-label{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:var(--red);border:1px solid rgba(254,17,50,.3);padding:.5rem 1.5rem;border-radius:100px;margin-bottom:2.5rem;animation:fadeIn 1s ease both}
-.hero h1{font-size:clamp(2.75rem,7vw,5rem);font-weight:900;line-height:1.08;letter-spacing:-.04em;color:var(--white);margin-bottom:1.5rem;animation:fadeUp .8s ease both .2s;opacity:0}
-.hero h1 em{font-style:normal;color:var(--red);display:block}
-.hero p{font-size:clamp(1.05rem,2vw,1.2rem);color:rgba(255,255,255,.5);max-width:560px;margin:0 auto 3rem;line-height:1.75;animation:fadeUp .8s ease both .4s;opacity:0}
-.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:inherit;font-size:.95rem;font-weight:700;padding:1rem 2rem;border-radius:100px;text-decoration:none;transition:all .3s ease;cursor:pointer;border:none}
-.btn-primary{background:var(--red);color:var(--white);box-shadow:0 4px 30px rgba(254,17,50,.3)}
-.btn-primary:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 40px rgba(254,17,50,.4)}
-.btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.2)}
-.btn-outline:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05)}
-.hero .btn-group{animation:fadeUp .8s ease both .55s;opacity:0;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn-arrow{transition:transform .2s ease}
-.btn:hover .btn-arrow{transform:translateX(4px)}
+/* Hero — Editorial */
+.hero{min-height:100vh;display:flex;align-items:center;padding:10rem 3rem 8rem;background:var(--white)}
+.hero-inner{max-width:1200px;margin:0 auto;width:100%}
+.hero-label{font-size:.65rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:3rem;animation:fadeIn 1s ease both}
+.hero h1{font-family:'Instrument Serif',serif;font-size:clamp(3.5rem,9vw,7.5rem);font-weight:400;line-height:1.02;letter-spacing:-.04em;color:var(--text);margin-bottom:2rem;animation:fadeUp 1s ease both .15s;opacity:0}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:480px;line-height:1.8;margin-bottom:3rem;animation:fadeUp 1s ease both .3s;opacity:0}
+.hero .btn-group{animation:fadeUp 1s ease both .4s;opacity:0;display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:inherit;font-size:.9rem;font-weight:600;padding:.9rem 2rem;border-radius:100px;text-decoration:none;transition:all .3s;cursor:pointer;border:none}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(254,17,50,.25)}
+.btn-ghost{background:none;color:var(--text);padding:.9rem 0;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--border)}
+.btn-ghost:hover{text-decoration-color:var(--red);color:var(--red)}
+.btn-arrow{transition:transform .2s}.btn:hover .btn-arrow{transform:translateX(4px)}
 
-/* Trust Bar */
-.trust-bar{background:var(--dark);border-top:1px solid rgba(255,255,255,.05);padding:2.5rem 2rem}
-.trust-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
-.trust-item{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.3);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
-.trust-item span{color:var(--red);margin-right:.35rem}
+/* Divider */
+.divider{max-width:1200px;margin:0 auto;height:1px;background:var(--border)}
 
-/* Sections */
-section{padding:7rem 2rem}
-.container{max-width:1100px;margin:0 auto}
-.section-label{font-size:.65rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:1rem}
-.section-title{font-size:clamp(1.85rem,3.5vw,2.75rem);font-weight:900;letter-spacing:-.03em;line-height:1.15;margin-bottom:1rem}
-.section-desc{font-size:1.05rem;color:var(--grey);max-width:540px;line-height:1.75}
+/* Trust */
+.trust{padding:3rem 3rem;background:var(--white)}
+.trust-inner{max-width:1200px;margin:0 auto;display:flex;gap:3rem;flex-wrap:wrap;justify-content:flex-start}
+.trust-item{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.trust-item span{color:var(--red);margin-right:.3rem}
+
+/* Section Basics */
+section{padding:8rem 3rem}
+.container{max-width:1200px;margin:0 auto}
+.sec-label{font-size:.6rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:1.5rem}
+.sec-title{font-family:'Instrument Serif',serif;font-size:clamp(2rem,4.5vw,3.5rem);font-weight:400;letter-spacing:-.03em;line-height:1.1;margin-bottom:1.25rem}
+.sec-desc{font-size:1rem;color:var(--muted);max-width:500px;line-height:1.8}
 
 /* What We Do */
-.what-we-do{background:var(--white)}
-.what-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:4rem;align-items:center}
-.what-visual{position:relative;background:var(--dark);border-radius:20px;padding:2.5rem;min-height:300px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-.what-visual::after{content:'';position:absolute;top:0;right:0;width:40%;height:100%;background:linear-gradient(135deg,transparent,rgba(254,17,50,.06));pointer-events:none;border-radius:0 20px 20px 0}
-.speed-line{height:2px;border-radius:2px;margin-bottom:1rem;animation:gradientShift 3s ease infinite;background-size:200% 200%}
-.speed-line:nth-child(1){width:95%;background:linear-gradient(90deg,var(--red),rgba(254,17,50,.15))}
-.speed-line:nth-child(2){width:65%;background:linear-gradient(90deg,rgba(254,17,50,.5),rgba(254,17,50,.08))}
-.speed-line:nth-child(3){width:80%;background:linear-gradient(90deg,var(--red),rgba(254,17,50,.1))}
-.speed-line:nth-child(4){width:50%;background:linear-gradient(90deg,rgba(254,17,50,.35),rgba(254,17,50,.05))}
-.speed-line:nth-child(5){width:88%;background:linear-gradient(90deg,rgba(254,17,50,.7),rgba(254,17,50,.12))}
-.what-visual .caption{color:rgba(255,255,255,.35);font-size:.75rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;margin-top:1.5rem}
-.what-text h3{font-size:1.5rem;font-weight:800;margin-bottom:1rem;letter-spacing:-.01em;line-height:1.3}
-.what-text p{color:#555;line-height:1.8;margin-bottom:1rem;font-size:.95rem}
-.what-text .highlight{color:var(--red);font-weight:700}
+.what{background:var(--white)}
+.what-layout{display:grid;grid-template-columns:1fr 1fr;gap:6rem;margin-top:5rem;align-items:center}
+.what-text h3{font-family:'Instrument Serif',serif;font-size:1.8rem;line-height:1.25;margin-bottom:1.25rem;font-weight:400}
+.what-text p{color:var(--muted);line-height:1.85;margin-bottom:1rem;font-size:.95rem}
+.what-text .hl{color:var(--red);font-weight:600}
+.what-visual{position:relative;border-left:1px solid var(--border);padding-left:3rem}
+.what-visual blockquote{font-family:'Instrument Serif',serif;font-size:1.75rem;font-style:italic;line-height:1.4;color:var(--text);letter-spacing:-.01em}
+.what-visual cite{display:block;font-style:normal;font-family:'Inter',sans-serif;font-size:.75rem;color:var(--muted);margin-top:1.5rem;letter-spacing:.05em;text-transform:uppercase;font-weight:600}
 
 /* Services */
 .services{background:var(--light)}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-.service-card{background:var(--white);border-radius:16px;padding:2rem;border:1px solid rgba(0,0,0,.04);transition:all .35s ease}
-.service-card:hover{border-color:rgba(254,17,50,.15);box-shadow:0 12px 40px rgba(0,0,0,.06);transform:translateY(-3px)}
-.service-icon{width:44px;height:44px;border-radius:12px;background:rgba(254,17,50,.06);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.15rem}
-.service-card h3{font-size:1.05rem;font-weight:800;margin-bottom:.5rem;letter-spacing:-.01em}
-.service-card p{color:#666;font-size:.88rem;line-height:1.7}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:4rem;background:var(--border);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.svc{background:var(--white);padding:2.5rem;transition:all .4s}
+.svc:hover{background:var(--light)}
+.svc-num{font-size:.65rem;font-weight:600;color:var(--muted);letter-spacing:.15em;margin-bottom:1.25rem}
+.svc h3{font-size:1.05rem;font-weight:700;margin-bottom:.6rem;letter-spacing:-.01em}
+.svc p{color:var(--muted);font-size:.87rem;line-height:1.75}
 
-/* 3E Framework */
+/* Framework */
 .framework{background:var(--white)}
-.framework-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-.framework-card{background:var(--light);border-radius:16px;padding:2.25rem;transition:all .4s ease;position:relative;overflow:hidden;border:1px solid transparent}
-.framework-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
-.framework-card:hover::before{transform:scaleX(1)}
-.framework-card:hover{border-color:rgba(254,17,50,.1);transform:translateY(-3px);box-shadow:0 16px 50px rgba(0,0,0,.06)}
-.card-number{font-size:3rem;font-weight:900;color:rgba(0,0,0,.06);line-height:1;margin-bottom:.75rem;letter-spacing:-.03em}
-.framework-card h3{font-size:1.15rem;font-weight:800;margin-bottom:.6rem}
-.framework-card p{color:#666;font-size:.9rem;line-height:1.7}
+.fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4rem;margin-top:4rem}
+.fw-card{position:relative}
+.fw-card::before{content:'';position:absolute;top:0;left:0;width:32px;height:2px;background:var(--red);transform-origin:left;animation:lineGrow .6s ease both}
+.fw-card{padding-top:1.5rem}
+.fw-num{font-family:'Instrument Serif',serif;font-size:3.5rem;color:rgba(0,0,0,.06);line-height:1;margin-bottom:.5rem}
+.fw-card h3{font-size:1.1rem;font-weight:700;margin-bottom:.5rem}
+.fw-card p{color:var(--muted);font-size:.88rem;line-height:1.75}
 
-/* Why ALL AI */
+/* Why */
 .why{background:var(--light)}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3.5rem}
-.why-item{background:var(--white);padding:2rem;border-radius:16px;border:1px solid rgba(0,0,0,.04);transition:all .35s ease}
-.why-item:hover{border-color:var(--red);box-shadow:0 12px 40px rgba(254,17,50,.06)}
-.why-item .vs{font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
-.why-item .vs::before{content:'';display:block;width:14px;height:2px;background:var(--red)}
-.why-item h3{font-size:1.05rem;font-weight:800;margin-bottom:.6rem}
-.why-item p{color:#666;font-size:.88rem;line-height:1.7}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:4rem}
+.why-card{padding:2rem 0;border-top:1px solid var(--border);transition:border-color .3s}
+.why-card:hover{border-color:var(--red)}
+.why-tag{font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:1rem}
+.why-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.6rem}
+.why-card p{color:var(--muted);font-size:.87rem;line-height:1.75}
 
 /* Process */
 .process{background:var(--white)}
-.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;margin-top:3.5rem;position:relative}
-.process-steps::before{content:'';position:absolute;top:28px;left:calc(12.5% + 1rem);right:calc(12.5% + 1rem);height:2px;background:linear-gradient(90deg,var(--red),rgba(254,17,50,.2));z-index:0}
-.process-step{text-align:center;position:relative;z-index:1}
-.step-num{width:56px;height:56px;border-radius:50%;background:var(--dark);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1rem;margin:0 auto 1.25rem;border:3px solid var(--white);box-shadow:0 4px 20px rgba(0,0,0,.1)}
-.process-step h4{font-size:.95rem;font-weight:800;margin-bottom:.4rem}
-.process-step p{font-size:.82rem;color:#888;line-height:1.6}
+.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:3rem;margin-top:4rem}
+.proc-step .num{font-family:'Instrument Serif',serif;font-size:3rem;color:var(--red);line-height:1;margin-bottom:1rem;opacity:.5}
+.proc-step h4{font-size:.95rem;font-weight:700;margin-bottom:.4rem}
+.proc-step p{font-size:.82rem;color:var(--muted);line-height:1.7}
 
 /* CTA */
-.cta-section{background:var(--dark);text-align:center;padding:8rem 2rem;position:relative;overflow:hidden}
-.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,rgba(254,17,50,.08) 0%,transparent 60%);pointer-events:none}
-.cta-section .container{position:relative;z-index:1}
-.cta-section h2{font-size:clamp(2rem,5vw,3.25rem);font-weight:900;color:var(--white);letter-spacing:-.03em;margin-bottom:1rem;line-height:1.1}
-.cta-section p{color:rgba(255,255,255,.4);font-size:1.05rem;margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
+.cta-section{padding:10rem 3rem;text-align:center;background:var(--white);position:relative}
+.cta-section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:80px;background:var(--border)}
+.cta-section h2{font-family:'Instrument Serif',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:400;letter-spacing:-.03em;margin-bottom:1rem;line-height:1.1}
+.cta-section h2 em{font-style:italic;color:var(--red)}
+.cta-section p{color:var(--muted);font-size:1rem;margin-bottom:2.5rem;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.8}
 
 /* Footer */
-footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.05);padding:2.5rem 2rem}
-.footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-footer p{color:rgba(255,255,255,.25);font-size:.8rem}
-footer a{color:rgba(255,255,255,.25);text-decoration:none;transition:color .2s}
+footer{padding:2.5rem 3rem;border-top:1px solid var(--border)}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+footer p{color:var(--muted);font-size:.78rem}
+footer a{color:var(--muted);text-decoration:none;transition:color .2s;font-size:.78rem}
 footer a:hover{color:var(--red)}
 .footer-links{display:flex;gap:2rem}
-.footer-links a{font-size:.8rem;font-weight:500}
 
 /* Responsive */
 @media(max-width:900px){
-  .services-grid,.framework-grid,.why-grid{grid-template-columns:1fr 1fr}
-  .process-steps{grid-template-columns:1fr 1fr;gap:2.5rem}
-  .process-steps::before{display:none}
+  nav{padding:1rem 1.5rem}
+  .hero,.cta-section,section{padding-left:1.5rem;padding-right:1.5rem}
+  .what-layout{grid-template-columns:1fr;gap:3rem}
+  .services-grid,.fw-grid,.why-grid{grid-template-columns:1fr 1fr}
+  .proc-steps{grid-template-columns:1fr 1fr;gap:2rem}
 }
 @media(max-width:640px){
+  .hero{padding:8rem 1.5rem 5rem}
   section{padding:5rem 1.5rem}
-  .what-grid,.services-grid,.framework-grid,.why-grid,.process-steps{grid-template-columns:1fr;gap:1.5rem}
-  .what-visual{min-height:200px;padding:2rem}
-  nav{padding:1rem 1.25rem}
-  .trust-inner{gap:1.5rem;justify-content:center}
+  .services-grid,.fw-grid,.why-grid,.proc-steps{grid-template-columns:1fr}
+  .trust-inner{gap:1.5rem}
   .footer-inner{flex-direction:column;text-align:center}
+  .what-visual{padding-left:1.5rem}
 }
 
 /* Modal */
-.modal-overlay{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.modal-overlay{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
 .modal-overlay.active{opacity:1;pointer-events:auto}
-.modal{background:var(--white);border-radius:20px;max-width:520px;width:calc(100% - 2rem);max-height:90vh;overflow-y:auto;padding:2.5rem;position:relative;transform:translateY(20px) scale(.97);transition:transform .3s ease}
-.modal-overlay.active .modal{transform:translateY(0) scale(1)}
-.modal-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;border:none;background:var(--light);cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:background .2s ease;color:var(--dark)}
-.modal-close:hover{background:#e0e0e0}
-.modal h3{font-size:1.4rem;font-weight:800;margin-bottom:.25rem}
-.modal .modal-sub{color:#666;font-size:.9rem;margin-bottom:1.5rem}
-.hs-form-container{min-height:200px}
+.modal{background:#fff;border-radius:20px;max-width:500px;width:calc(100% - 2rem);max-height:90vh;overflow-y:auto;padding:2.5rem;position:relative;transform:translateY(20px);transition:transform .3s}
+.modal-overlay.active .modal{transform:none}
+.modal-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;border:1px solid var(--border);background:#fff;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:border-color .2s;color:var(--text)}
+.modal-close:hover{border-color:var(--red)}
+.modal h3{font-family:'Instrument Serif',serif;font-size:1.6rem;font-weight:400;margin-bottom:.25rem}
+.modal .modal-sub{color:var(--muted);font-size:.88rem;margin-bottom:1.5rem}
+.form-container{min-height:200px}
+.form-container iframe{width:100%;border:none;min-height:400px}
 </style>
 </head>
 <body>
 
 <nav id="nav">
   <div class="inner">
-    <a href="#" class="logo"><span>ALL</span> AI</a>
+    <a href="#" class="logo"><b>ALL</b> AI</a>
     <a href="#" class="cta-nav">Get in Touch</a>
   </div>
 </nav>
 
 <section class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-content">
+  <div class="hero-inner">
     <div class="hero-label">Architect-Level Led · Artificial Intelligence</div>
-    <h1>Architect-Level Led<em>Artificial Intelligence.</em></h1>
+    <h1>Architect-Level Led<br><em>Artificial Intelligence.</em></h1>
     <p>ALL AI puts a senior software architect at the helm of every project — directing AI to deliver production-ready work in days, not months.</p>
     <div class="btn-group">
-      <a href="#" class="btn btn-primary">Start a Project <span class="btn-arrow">→</span></a>
-      <a href="#what" class="btn btn-outline">See How We Work</a>
+      <a href="#" class="btn btn-primary" aria-label="Start a project with ALL AI Agency">Start a Project <span class="btn-arrow">→</span></a>
+      <a href="#what" class="btn btn-ghost">See How We Work</a>
     </div>
   </div>
 </section>
 
-<div class="trust-bar">
+<div class="trust">
   <div class="trust-inner">
     <div class="trust-item"><span>→</span> Days, not months</div>
     <div class="trust-item"><span>→</span> Production-ready code</div>
@@ -193,24 +234,21 @@ footer a:hover{color:var(--red)}
     <div class="trust-item"><span>→</span> Ndevr's 3E Framework</div>
   </div>
 </div>
+<div class="divider"></div>
 
-<section class="what-we-do" id="what">
+<section class="what" id="what">
   <div class="container">
-    <div class="section-label">What We Do</div>
-    <div class="section-title">The output of a senior architect.<br>The velocity of AI.</div>
-    <div class="what-grid">
-      <div class="what-visual reveal">
-        <div class="speed-line"></div>
-        <div class="speed-line"></div>
-        <div class="speed-line"></div>
-        <div class="speed-line"></div>
-        <div class="speed-line"></div>
-        <p class="caption">Iteration velocity →</p>
-      </div>
-      <div class="what-text reveal delay-1">
+    <div class="sec-label">What We Do</div>
+    <h2 class="sec-title">The output of a senior architect.<br>The velocity of AI.</h2>
+    <div class="what-layout">
+      <div class="what-text reveal">
         <h3>Most teams make you choose.<br>We don't accept that tradeoff.</h3>
-        <p>Every ALL AI project is directed by a human software architect — someone who's built and scaled real systems. They set the architecture, review every decision, and ensure the code is <span class="highlight">production-ready</span> before it ships.</p>
+        <p>Every ALL AI project is directed by a human software architect — someone who's built and scaled real systems. They set the architecture, review every decision, and ensure the code is <span class="hl">production-ready</span> before it ships.</p>
         <p>AI handles the heavy lifting: scaffolding, iteration, testing, documentation. Your architect handles what AI can't: judgment, tradeoffs, and knowing when the obvious solution is the wrong one.</p>
+      </div>
+      <div class="what-visual reveal d1">
+        <blockquote>"Every ALL AI project is directed by a human software architect who ensures the code is production-ready before it ships."</blockquote>
+        <cite>The ALL AI Standard</cite>
       </div>
     </div>
   </div>
@@ -218,62 +256,38 @@ footer a:hover{color:var(--red)}
 
 <section class="services" id="services">
   <div class="container">
-    <div class="section-label">Services</div>
-    <div class="section-title">What we ship</div>
-    <div class="section-desc">Full-stack capability, architect-led from kickoff to deployment.</div>
+    <div class="sec-label">Services</div>
+    <h2 class="sec-title">What we ship</h2>
+    <div class="sec-desc">Full-stack capability, architect-led from kickoff to deployment.</div>
     <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">🚀</div>
-        <h3>MVPs & New Products</h3>
-        <p>From zero to launched in days. We build functional products ready for real users — not throwaway prototypes you'll need to rebuild.</p>
-      </div>
-      <div class="service-card reveal delay-1">
-        <div class="service-icon">🌐</div>
-        <h3>Web Applications</h3>
-        <p>Full-stack web apps with clean architecture, real performance, and code your team can maintain. Modern frameworks, no shortcuts.</p>
-      </div>
-      <div class="service-card reveal delay-2">
-        <div class="service-icon">🤖</div>
-        <h3>AI-Native Products</h3>
-        <p>We build products with AI at the core — not bolted on. From LLM integrations to custom agents, we know what works in production vs. what just demos well.</p>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">📱</div>
-        <h3>Mobile & Cross-Platform</h3>
-        <p>Native-quality apps that run everywhere. We pick the right approach for your product based on what actually matters, not what's trending.</p>
-      </div>
-      <div class="service-card reveal delay-1">
-        <div class="service-icon">⚡</div>
-        <h3>Platform Modernization</h3>
-        <p>Legacy systems slowing you down? We modernize incrementally — ship improvements continuously while keeping everything running.</p>
-      </div>
-      <div class="service-card reveal delay-2">
-        <div class="service-icon">🔧</div>
-        <h3>Technical Strategy</h3>
-        <p>Don't know where to start? Our architects assess your stack, map the opportunities, and build a plan that's honest about tradeoffs.</p>
-      </div>
+      <div class="svc reveal"><div class="svc-num">01</div><h3>MVPs &amp; New Products</h3><p>From zero to launched in days. We build functional products ready for real users — not throwaway prototypes you'll need to rebuild.</p></div>
+      <div class="svc reveal d1"><div class="svc-num">02</div><h3>Web Applications</h3><p>Full-stack web apps with clean architecture, real performance, and code your team can maintain. Modern frameworks, no shortcuts.</p></div>
+      <div class="svc reveal d2"><div class="svc-num">03</div><h3>AI-Native Products</h3><p>We build products with AI at the core — not bolted on. From LLM integrations to custom agents, we know what works in production vs. what just demos well.</p></div>
+      <div class="svc reveal"><div class="svc-num">04</div><h3>Mobile &amp; Cross-Platform</h3><p>Native-quality apps that run everywhere. We pick the right approach based on what actually matters, not what's trending.</p></div>
+      <div class="svc reveal d1"><div class="svc-num">05</div><h3>Platform Modernization</h3><p>Legacy systems slowing you down? We modernize incrementally — ship improvements continuously while keeping everything running.</p></div>
+      <div class="svc reveal d2"><div class="svc-num">06</div><h3>Technical Strategy</h3><p>Our architects assess your stack, map the opportunities, and build a plan that's honest about tradeoffs.</p></div>
     </div>
   </div>
 </section>
 
 <section class="framework" id="framework">
   <div class="container">
-    <div class="section-label">Our Framework</div>
-    <div class="section-title">The 3E Framework</div>
-    <div class="section-desc">Every product we build is measured against three standards. No exceptions. No "we'll get to it later."</div>
-    <div class="framework-grid">
-      <div class="framework-card reveal">
-        <div class="card-number">01</div>
+    <div class="sec-label">Our Framework</div>
+    <h2 class="sec-title">The 3E Framework</h2>
+    <div class="sec-desc">Every product we build is measured against three standards. No exceptions. No "we'll get to it later."</div>
+    <div class="fw-grid">
+      <div class="fw-card reveal">
+        <div class="fw-num">01</div>
         <h3>Engineering Excellence</h3>
         <p>Clean code isn't optional — it's the baseline. Tested, documented, scalable. Built so your next developer doesn't curse the last one.</p>
       </div>
-      <div class="framework-card reveal delay-1">
-        <div class="card-number">02</div>
+      <div class="fw-card reveal d1">
+        <div class="fw-num">02</div>
         <h3>Elegant Experience</h3>
         <p>Users don't read architecture docs. They feel the product. We obsess over the interactions, the speed, the moments that make people stay.</p>
       </div>
-      <div class="framework-card reveal delay-2">
-        <div class="card-number">03</div>
+      <div class="fw-card reveal d2">
+        <div class="fw-num">03</div>
         <h3>Enduring Evolution</h3>
         <p>Products change. We architect for it — extensible systems, clear patterns, and decisions that make your next iteration as fast as the first.</p>
       </div>
@@ -283,22 +297,21 @@ footer a:hover{color:var(--red)}
 
 <section class="why" id="why">
   <div class="container">
-    <div class="section-label">Why ALL AI</div>
-    <div class="section-title">We exist because the alternatives aren't good enough.</div>
-    <div class="section-desc"></div>
+    <div class="sec-label">Why ALL AI</div>
+    <h2 class="sec-title">We exist because the alternatives aren't good enough.</h2>
     <div class="why-grid">
-      <div class="why-item reveal">
-        <div class="vs">vs Vibe Coding</div>
+      <div class="why-card reveal">
+        <div class="why-tag">vs Vibe Coding</div>
         <h3>Fast until it breaks.</h3>
         <p>Vibe coding ships quick — until a bad abstraction cascades through your codebase and nobody catches it. ALL AI puts an architect in the loop from line one.</p>
       </div>
-      <div class="why-item reveal delay-1">
-        <div class="vs">vs Traditional Agencies</div>
+      <div class="why-card reveal d1">
+        <div class="why-tag">vs Traditional Agencies</div>
         <h3>Quality, eventually.</h3>
         <p>Traditional agencies bill hours, not outcomes. Weeks of discovery, months of development, budgets that balloon. We use AI to collapse the timeline without cutting the quality.</p>
       </div>
-      <div class="why-item reveal delay-2">
-        <div class="vs">vs AI Tools Alone</div>
+      <div class="why-card reveal d2">
+        <div class="why-tag">vs AI Tools Alone</div>
         <h3>Code without context.</h3>
         <p>AI can generate code. It can't architect a system. It doesn't know your business constraints, your scale requirements, or when the obvious solution is the wrong one. Our architects do.</p>
       </div>
@@ -308,49 +321,32 @@ footer a:hover{color:var(--red)}
 
 <section class="process" id="process">
   <div class="container">
-    <div class="section-label">How It Works</div>
-    <div class="section-title">How it works</div>
-    <div class="section-desc">Four steps. No mystery.</div>
-    <div class="process-steps">
-      <div class="process-step reveal">
-        <div class="step-num">01</div>
-        <h4>Scope</h4>
-        <p>We talk about what you need, what matters, and what doesn't. Your architect defines the approach.</p>
-      </div>
-      <div class="process-step reveal delay-1">
-        <div class="step-num">02</div>
-        <h4>Sprint</h4>
-        <p>AI-accelerated development with architect review at every checkpoint. Working software, not slide decks. Working software, not slide decks.</p>
-      </div>
-      <div class="process-step reveal delay-2">
-        <div class="step-num">03</div>
-        <h4>Refine</h4>
-        <p>Real feedback on real software. Same-day iteration because the architect is in the code, not in a meeting.</p>
-      </div>
-      <div class="process-step reveal delay-3">
-        <div class="step-num">04</div>
-        <h4>Ship</h4>
-        <p>Production deployment with monitoring, documentation, and a clean handoff.</p>
-      </div>
+    <div class="sec-label">How It Works</div>
+    <h2 class="sec-title">Four steps. No mystery.</h2>
+    <div class="proc-steps">
+      <div class="proc-step reveal"><div class="num">01</div><h4>Scope</h4><p>We talk about what you need, what matters, and what doesn't. Your architect defines the approach.</p></div>
+      <div class="proc-step reveal d1"><div class="num">02</div><h4>Sprint</h4><p>AI-accelerated development with architect review at every checkpoint. Working software, not slide decks.</p></div>
+      <div class="proc-step reveal d2"><div class="num">03</div><h4>Refine</h4><p>Real feedback on real software. Same-day iteration because the architect is in the code, not in a meeting.</p></div>
+      <div class="proc-step reveal d3"><div class="num">04</div><h4>Ship</h4><p>Production deployment with monitoring, documentation, and a clean handoff.</p></div>
     </div>
   </div>
 </section>
 
 <section class="cta-section">
   <div class="container">
-    <h2 class="reveal">Ready to ship<br>something real?</h2>
-    <p class="reveal delay-1">No pitch decks. No 6-week discovery phase. Just a conversation about what you need and how fast we can get there.</p>
-    <a href="#" class="btn btn-primary reveal delay-2">
-      Get in Touch <span class="btn-arrow">→</span>
-    </a>
+    <h2 class="reveal">Ready to ship<br>something <em>real</em>?</h2>
+    <p class="reveal d1">No pitch decks. No 6-week discovery phase. Just a conversation about what you need and how fast we can get there.</p>
+    <a href="#" class="btn btn-primary reveal d2" aria-label="Get in touch with ALL AI Agency">Get in Touch <span class="btn-arrow">→</span></a>
   </div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <p>&copy; 2026 ALL AI Agency — Architect-Level Led Artificial Intelligence. A <a href="https://ndevr.io" target="_blank">Ndevr</a> venture.</p>
+    <p>&copy; 2026 ALL AI Agency — Architect-Level Led Artificial Intelligence. A <a href="https://ndevr.io" target="_blank" rel="noopener">Ndevr</a> venture.</p>
     <div class="footer-links">
       <a href="mailto:info@all-ai-agency.com">info@all-ai-agency.com</a>
+      <a href="https://x.com/allaiagency" target="_blank" rel="noopener" aria-label="ALL AI Agency on X">X</a>
+      <a href="https://instagram.com/allaiagency" target="_blank" rel="noopener" aria-label="ALL AI Agency on Instagram">Instagram</a>
     </div>
   </div>
 </footer>
@@ -358,78 +354,36 @@ footer a:hover{color:var(--red)}
 <!-- Contact Modal -->
 <div class="modal-overlay" id="contactModal">
   <div class="modal">
-    <button class="modal-close" id="modalClose">&times;</button>
+    <button class="modal-close" id="modalClose" aria-label="Close contact form">&times;</button>
     <h3>Let's Talk</h3>
     <p class="modal-sub">Tell us about your project and we'll get back to you fast.</p>
-    <div class="hs-form-container" id="hsFormContainer">
-      <!-- HubSpot form loads here -->
+    <div class="form-container" id="formContainer">
+      <!-- HighLevel Form Embed — replace FORM_URL with actual embed link once available -->
+      <iframe src="https://link.msgsndr.com/widget/form/Se43RPF6yO96l28Kldwk" loading="lazy" title="Contact Form" style="width:100%;height:500px;border:none;"></iframe>
     </div>
   </div>
 </div>
 
-<!-- HubSpot Tracking Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2143432.js"></script>
-<!-- HubSpot Forms Embed -->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<!-- HighLevel Tracking Script -->
+<!-- TODO: Replace with actual HighLevel tracking code once configured -->
+<script>
+(function() {
+  // HighLevel tracking will go here once we have the tracking code from the sub-account
+  // Location ID: 6uHdj4VDDRlCgRxpYMEO
+})();
+</script>
 
 <script>
-// Scroll-triggered nav
 const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>50)});
-
-// Scroll reveal
-const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.12});
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  if(a.classList.contains('btn-primary')||a.classList.contains('cta-nav'))return;
-  a.addEventListener('click',e=>{
-    const t=document.querySelector(a.getAttribute('href'));
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
-  });
-});
-
-// Modal
-const modal=document.getElementById('contactModal');
-const closeBtn=document.getElementById('modalClose');
-let formLoaded=false;
-
-function openModal(){
-  modal.classList.add('active');
-  document.body.style.overflow='hidden';
-  if(!formLoaded){
-    try{
-      hbspt.forms.create({
-        region:'na1',
-        portalId:'2143432',
-        // TODO: Replace with the ALL AI Agency form ID once created in HubSpot
-        formId:'YOUR_FORM_ID',
-        target:'#hsFormContainer',
-        onFormSubmitted:function(){
-          document.getElementById('hsFormContainer').innerHTML='<div style="text-align:center;padding:2rem 0"><h3 style="margin-bottom:.5rem">Thanks!</h3><p style="color:#666">We\'ll be in touch shortly.</p></div>';
-        }
-      });
-    }catch(e){
-      document.getElementById('hsFormContainer').innerHTML='<div style="text-align:center;padding:2rem 0"><p style="color:#666">Email us at <a href="mailto:info@all-ai-agency.com" style="color:var(--red)">info@all-ai-agency.com</a></p></div>';
-    }
-    formLoaded=true;
-  }
-}
-
-function closeModal(){
-  modal.classList.remove('active');
-  document.body.style.overflow='';
-}
-
-closeBtn.addEventListener('click',closeModal);
-modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-
-// Wire CTA buttons to modal
-document.querySelectorAll('.btn-primary, .cta-nav').forEach(el=>{
-  el.addEventListener('click',e=>{e.preventDefault();openModal()});
-});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{if(a.classList.contains('btn-primary')||a.classList.contains('cta-nav'))return;a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+const modal=document.getElementById('contactModal'),closeBtn=document.getElementById('modalClose');
+function openModal(){modal.classList.add('active');document.body.style.overflow='hidden'}
+function closeModal(){modal.classList.remove('active');document.body.style.overflow=''}
+closeBtn.addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('.btn-primary,.cta-nav').forEach(el=>{el.addEventListener('click',e=>{e.preventDefault();openModal()})});
 </script>
 </body>
 </html>
